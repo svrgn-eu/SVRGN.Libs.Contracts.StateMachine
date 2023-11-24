@@ -4,10 +4,10 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<LangVersion>latest</LangVersion>
-		<Version>1.0.0-alpha01</Version>
+		<Version>1.0.0-alpha02</Version>
 		<Authors>SVRGN.eu</Authors>
 		<Description>Interfaces for a state machine implementation with transition events and all of that.</Description>
-		<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+		<PackageReleaseNotes>Added a methods to change into a target state without knowing the transition name</PackageReleaseNotes>
 		<PackageTags>Interfaces;SVRGN;StateMachine;State Machine;</PackageTags>
 	</PropertyGroup>
 

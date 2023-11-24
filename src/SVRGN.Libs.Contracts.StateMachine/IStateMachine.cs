@@ -26,6 +26,16 @@ namespace SVRGN.Libs.Contracts.StateMachine
         bool AddStateUpdateAction(string StateName, Action ActionToTake);
         bool AddStateExitAction(string StateName, Action ActionToTake);
         bool Transition(string TransitionName);
+
+        #region TransitionTo: Transitions into a Target state, the state machine will check, if possible and then do the transition
+        /// <summary>
+        /// Transitions into a Target state, the state machine will check, if possible and then do the transition
+        /// </summary>
+        /// <param name="TargetStateName">The name of the target state</param>
+        /// <returns>true, if the target state exists and a transition from current to target state could be performed successfully</returns>
+        bool TransitionTo(string TargetStateName);
+        #endregion TransitionTo
+
         string GetCurrentStateName();
 
         #endregion Methods
