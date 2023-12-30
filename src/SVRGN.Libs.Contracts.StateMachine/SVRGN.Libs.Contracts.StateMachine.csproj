@@ -6,10 +6,20 @@
 		<LangVersion>latest</LangVersion>
 		<Version>1.0.0-alpha02</Version>
 		<Authors>SVRGN.eu</Authors>
+		<Copyright>2023 SVRGN.eu</Copyright>
 		<Description>Interfaces for a state machine implementation with transition events and all of that.</Description>
 		<PackageReleaseNotes>Added a methods to change into a target state without knowing the transition name</PackageReleaseNotes>
 		<PackageTags>Interfaces;SVRGN;StateMachine;State Machine;</PackageTags>
+		<PackageProjectUrl>https://SVRGN.eu</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="SVRGN.Libs.Contracts.Base" Version="1.0.0-alpha16" />
